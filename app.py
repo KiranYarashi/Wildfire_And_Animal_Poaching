@@ -15,7 +15,3 @@ st.write('')
 img = Image.open(r'./images//forest_fires.jpg')
 st.image(img)
 
-# Sidebar for Object Recognition
-st.sidebar.header('Animal Poaching Detection')
-if st.sidebar.button('Start'):
-    os.system('python "Object Recognication copy.py"')
