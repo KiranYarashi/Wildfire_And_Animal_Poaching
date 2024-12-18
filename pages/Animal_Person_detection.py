@@ -83,5 +83,6 @@ webrtc_streamer(
     key="object-detection",
     mode=WebRtcMode.SENDRECV,
     video_processor_factory=VideoTransformer,
+    async_processing=True,
     media_stream_constraints={"video": True, "audio": False}
 )
