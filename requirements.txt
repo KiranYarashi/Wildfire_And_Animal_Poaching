@@ -3,6 +3,6 @@ torchvision
 torchinfo
 pathlib
 tqdm
-streamlit==1.27.0
-pillow==9.4.0
+streamlit
+pillow
 matplotlib
