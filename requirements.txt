@@ -6,4 +6,4 @@ streamlit
 streamlit_webrtc
 pillow
 matplotlib
-cv2
+opencv-python
