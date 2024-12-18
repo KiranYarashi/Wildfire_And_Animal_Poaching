@@ -15,7 +15,7 @@ client = Client(account_sid, auth_token)
 
 # Detection settings
 st.title("Animal and Person Detection System")
-st.sidebar.header("Detection Settings")
+st.sidebar.header("hDetection Settings")
 confidence_threshold = st.sidebar.slider("Confidence Threshold", 0.0, 1.0, 0.55)
 notification_interval = st.sidebar.number_input("Notification Interval (minutes)", 1, 60, 5) * 60  # Convert to seconds
 
@@ -40,6 +40,8 @@ class VideoTransformer(VideoTransformerBase):
 
     def recv(self, frame):
         img = frame.to_ndarray(format="bgr24")
+        # Resize the frame to reduce processing time
+        img = cv2.resize(img, (640, 480))
         ClassIndex, confidence, bbox = model.detect(img, confThreshold=confidence_threshold)
 
         if len(ClassIndex) != 0:
