@@ -1,11 +1,8 @@
 torch
 torchvision
 torchinfo
-pathlib
 tqdm
 streamlit
 streamlit_webrtc
-VideoFrame
-VideoTransformerBase
 pillow
 matplotlib
