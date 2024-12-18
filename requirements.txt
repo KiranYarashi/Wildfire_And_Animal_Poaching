@@ -7,3 +7,4 @@ streamlit_webrtc
 pillow
 matplotlib
 opencv-python
+twilio
